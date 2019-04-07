@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//WebRoot/compute.jsp=UTF-8
+encoding//WebRoot/login.jsp=UTF-8
+encoding//WebRoot/main/footer.jsp=UTF-8
+encoding//WebRoot/main/main.jsp=UTF-8
+encoding//WebRoot/stu/modify.jsp=UTF-8
+encoding//WebRoot/stu/stuinfo.jsp=UTF-8
+encoding//WebRoot/user/addstu.jsp=UTF-8
+encoding//WebRoot/user/deletestu.jsp=UTF-8
+encoding//WebRoot/user/find.jsp=UTF-8
+encoding//WebRoot/user/modifystu.jsp=UTF-8
+encoding//WebRoot/user/pwd.jsp=UTF-8
+encoding//WebRoot/user/reg.jsp=UTF-8
+encoding//WebRoot/user/userinfo.jsp=UTF-8
+encoding/<project>=UTF-8

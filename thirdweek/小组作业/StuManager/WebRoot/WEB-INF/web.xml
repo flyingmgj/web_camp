@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>StuManager</display-name>
+  <!-- 配置过滤器 -->
+  <filter>
+    <filter-name>allFilter</filter-name>
+    <filter-class>com.magee.filter.AllFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>allFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>sessionFilter</filter-name>
+    <filter-class>com.magee.filter.SessionFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>sessionFilter</filter-name>
+    <url-pattern>*.do</url-pattern>
+  </filter-mapping>
+  
+  
+  <!-- 配置监听器 -->
+  <listener>
+  	<listener-class>com.magee.listener.MyListener</listener-class>
+  </listener>
+ 
+ 
+   
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.magee.controller.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>StudentRegServlet</servlet-name>
+    <servlet-class>com.magee.controller.StudentRegServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StudentRegServlet</servlet-name>
+    <url-pattern>/reg</url-pattern>
+  </servlet-mapping>
+
+</web-app>
